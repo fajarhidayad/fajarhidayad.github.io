@@ -2,111 +2,172 @@
 <html>
 <head>
 	<title>Katalog Visit Indonesia</title>
+	<style>
+	li a:hover {
+ 	 background-color: #111;
+	}
+	li {
+  	float: right;
+	}
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #00b9d4;
+	}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 26px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.b{
+	display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 26px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 26%;
+  padding: 0 10px;
+}
+
+.row {margin: 200 2000px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+	</style>
 </head>
 <body>
 <nav>
-	<table>
-		<tr>
-			<th>
-				<a href="">Home</a>
-			</th>
-			<th>
-				<a href="">Galeri</a>
-			</th>
-			<th>
-				<a href="">Public Servise</a>
-				
-			</th>
-			<th>
-				<a href="">Login</a>
-			</th>
-		</tr>
-	</table>
+		<ul>
+			<li><a href="#home"><b>Login</b></a></li>
+			<li><b class="b">|</b></li>
+			<li><a href="#news">Public Service</a></li>
+			<li><a href="#contact">Gallery</a></li>
+			<li><a href="#about">Home</a></li>			  
+		</ul>
+
 </nav>
 <br><br><br>
 <h1>Wisata Alam</h1>
-<table>
-	<tr>
-		<th>
-			<br>
-			<img src="Asset 3.png">
-			<h3>Pantai Kuta, Bali</h3>
-			<p>Daerah ini merupakan sebuah tujuan</p>
-			<p>wisata turis mancanegara dan telah</p>
-			<p>menjadi objek wisata andalan Pulau Bali</p>
-			<p>sejak awal tahun 1970-an.</p>
-			<br><br><br>
-			<a href="">Lihat</a>
-			<br><br><br>
-			<h1><a href=""></a></h1>
-		</th>
-		<th>
-			<img src="Asset 4.png">
-			<h3>Raja Ampat, Papua</h3>
-			<p>Kepulauan Raja Ampat merupakan</p>
-			<p>rangkaian empat gugusan pulau yang</p>
-			<p>berdekatan dan berlokasi di barat</p>
-			<p>bagian Kepala Burung (Vogelkoop)</p>
-			<p>Pulau Papua.</p>
-			<br><br><br>
-			<a href="">Lihat</a>
-			<br><br><br>
-			<h1><a href=""></a></h1>
-		</th>
-		<th>
-			<br><br>
-			<img src="Asset 5.png">
+<div class="row">
+
+		<div class="column">
+		  <div class="card">
+			  <br><br>
+			<img src="Asset 3.png" width="300px;">
+				<h3>Pantai Kuta, Bali</h3>
+				<p>Daerah ini merupakan sebuah tujuan
+				wisata turis mancanegara dan telah
+				menjadi objek wisata andalan Pulau Bali
+				sejak awal tahun 1970-an.</p>
+				<a href="">Lihat</a>
+		  </div>
+		</div>
+		
+		<div class="column">
+		  <div class="card">
+				<img src="Asset 4.png" width="300px;">
+				<h3>Raja Ampat, Papua</h3>
+				<p>Kepulauan Raja Ampat merupakan
+				rangkaian empat gugusan pulau yang
+				berdekatan dan berlokasi di barat
+				bagian Kepala Burung (Vogelkoop)
+				Pulau Papua.</p>
+				<a href="">Lihat</a>
+		  </div>
+		</div>
+		
+		<div class="column">
+		  <div class="card">
+				<img src="Asset 5.png" width="300px;">
 			<h3>Bromo</h3>
-			<p>Gunung Bromo terkenal sebagai objek</p>
-			<p>wisata utama di Jawa Timur. Sebagai</p>
-			<p>sebuah objek wisata, Bromo menjadi</p>
-			<p>menarik karena statusnya sebagai</p>
-			<p>gunung berapi yang masih aktif.</p>
-			<br><br><br>
+			<p>Gunung Bromo terkenal sebagai objek
+			wisata utama di Jawa Timur. Sebagai
+			sebuah objek wisata, Bromo menjadi
+			menarik karena statusnya sebagai
+			gunung berapi yang masih aktif.</p>
 			<a href="">Lihat</a>
-			<br><br><br>
-			<h1><a href="">Jelajahi Lebih</a></h1>
-		</th>
-	</tr>
-	<br><br><br>
-	<tr>
-		<th>
-			<br><br><br><br>
-			<img src="Asset 6.png">
-			<h3>Lontong Balap, Surabaya</h3>
-			<p>makanan khas Indonesia yang </p>
-			<p>merupakan ciri khas kota Surabaya di </p>
-			<p>Jawa Timur. Makanan ini terdiri dari </p>
-			<p>lontong, taoge, tahu goreng, lentho, </p>
-			<p>bawang goreng, kecap, dan sambal.</p>
-			<a href="">Lihat</a>
-			<br><br><br>
-			<h1><a href=""></a></h1>
-		</th>
-		<th>
-			<img src="Asset 7.png">
-			<h3>Gudeg, Yogyakarta</h3>
-			<p>makanan khas Yogyakarta dan Jawa </p>
-			<p>Tengah yang terbuat dari nangka muda </p>
-			<p>yang dimasak dengan santan.</p>
-			<a href="">Lihat</a>
-			<br><br><br>
-			<h1><a href=""></a></h1>
-		</th>
-		<th>
-			<br><br><br><br><br><br>
-			<img src="Asset 8.png">
-			<h3>Rawon, Jawa Timur</h3>
-			<p>Rawon adalah masakan Indonesia </p>
-			<p>berupa sup daging berkuah hitam </p>
-			<p>sebagai campuran bumbu khas yang </p>
-			<p>menggunakan kluwek.</p>
-			<a href="">Lihat</a>
-			<br><br><br>
-			<h1><a href="">Jelajahi Lebih</a></h1>
-		</th>
-	</tr>
-</table>
+		  </div>
+		</div>
+	  </div>
+<br>
+	  
+	  <div class="row">
+
+			<div class="column">
+			  <div class="card">
+					<img src="Asset 6.png" width="300px;">
+					<h3>Lontong Balap, Surabaya</h3>
+					<p>makanan khas Indonesia yang 
+					merupakan ciri khas kota Surabaya di 
+					Jawa Timur. Makanan ini terdiri dari 
+					lontong, taoge, tahu goreng, lentho, 
+					bawang goreng, kecap, dan sambal.</p>
+					<a href="">Lihat</a>
+					<h1><a href=""></a></h1>
+			  </div>
+			</div>
+			
+			<div class="column">
+			  <div class="card">
+					<img src="Asset 7.png" width="300px;">
+					<h3>Gudeg, Yogyakarta</h3>
+					<p>makanan khas Yogyakarta dan Jawa 
+					Tengah yang terbuat dari nangka muda 
+					yang dimasak dengan santan.</p>
+					<a href="">Lihat</a>
+					<h1><a href=""></a></h1>
+			  </div>
+			</div>
+			
+			<div class="column">
+			  <div class="card">
+					<img src="Asset 8.png" width="300px;">
+					<h3>Rawon, Jawa Timur</h3>
+					<p>Rawon adalah masakan Indonesia
+					berupa sup daging berkuah hitam
+					sebagai campuran bumbu khas yang 
+					menggunakan kluwek.</p>
+					<a href="">Lihat</a>
+					
+			  </div>
+			</div>
+		  </div>
 
 <footer>
         <div>
