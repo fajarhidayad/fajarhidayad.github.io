@@ -1,3 +1,8 @@
+:root {
+  --modal-duration: 1s;
+  --modal-color: #428bca;
+}
+
 body.katalog{
   font-family: Roboto;
   background-color: white;
@@ -40,9 +45,20 @@ div button{
     border-radius: 25px; 
 }
 
+div button:hover{
+  background-color: #3c6465;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
 ul img{
     height: 65px;
     width: 100px;
+}
+
+footer img{
+  height: 210px;
+  width: 280px;
 }
 
 nav ul{
@@ -79,6 +95,7 @@ nav ul li a{
 .logo{
     width: 160px;
     height: 160px;
+    margin-top: 20px;
 }
 
 .Row
@@ -225,4 +242,186 @@ body {
     width: 250px;
     height: 160px;
     text-align: center;
+  }
+
+  .card a{
+    text-decoration: none;
+  }
+
+/* Modal Login */
+  .modal-button{
+    margin-top: 2px;
+    background: #5f9ea0;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .modal-button:hover{
+    background: #3c6465;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    margin: 10% auto;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+  }
+  
+  .judul{
+    margin-left: 100px;
+  }
+
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+  }
+  
+  .modal-body {
+    padding: 70px 20px;
+    background: #fff;
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-footer a{
+    color: white;
+
+  }
+
+  input {
+    width: 50%;
+    padding: 1.3em;
+    margin-bottom: 3em;
+    box-sizing: border-box;
+    margin-top: 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: lightgrey;
+    font-size:1em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .modal-form{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* End Modal */
+
+  footer{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    background: rgb(3,190,180);
+    background: linear-gradient(180deg, rgba(3,190,180,1) 0%, rgba(79,172,254,1) 100%);
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  footer:before,
+  footer:after{
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    position: absolute;
+    content: '';
+    pointer-events: none;
+  }
+
+  footer:before{
+    height: 50%;
+    background: inherit;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover{
+    color: gray;
+  }
+
+  .footer-bottom{
+    text-align: left;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .logo-footer{
+    text-align: right;
+    margin-top: -25px;
+  }
+
+  .logo-footer img{
+    height: 30px;
+    width: 30px;
+    margin-left: 5px; 
+    margin-right: 5px;
   }

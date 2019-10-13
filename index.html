@@ -12,13 +12,42 @@
     <nav>
         <ul>
             <img src="logo.png" alt="">
-            <li><a href="">Login</a></li>
+            <li><button id="modal-btn" class="modal-button">Login</button></li>
             <li><a href="">Public Services</a></li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Home</a></li>
         </ul>
     </nav>
-    <div>
+
+    <!-- div Modal -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+        </div>
+        <div class="modal-body">
+            <div class="modal-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Masukkan Username" name="username" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="******" name="password" id="password" required>
+                </div>
+                <div class="input-group" style="text-align: end;">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p>Tidak Punya Akun ? <a href="">Register</a></p>
+        </div>
+        </div>
+    </div>
+
+    <div class="judul">
         <h1>Selamat Datang di <br> Visit Indonesia</h1>
         <button>Mulai Jelajah <span></span></button>
     </div>
@@ -81,11 +110,21 @@
     <br>
 
     <footer>
-        <div>
+        <div class="footer">
+            <img src="logo.png" alt=""><br>
             <a href="">Cookie Policy</a> | <a href="">Privacy Policy</a> | 
             <a href="">Terms & Conditions</a> | <a href="">Contact Us</a>
         </div><hr>
-        Copyright 2019 - Pariwisata Indonesia
+        <div class="footer-bottom">
+            Copyright 2019 - Pariwisata Indonesia
+            <div class="logo-footer">
+                <img src="ig-logo.png" alt="">
+                <img src="twitter-logo.png" alt="">
+                <img src="yt-logo.png" alt="">
+            </div>
+        </div>
     </footer>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
