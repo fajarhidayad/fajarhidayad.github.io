@@ -12,13 +12,12 @@
 		<nav>
 			<ul>
 				<img src="logo.png" alt="">
-				<li><a href="#home"><b>Login</b></a></li>
+				<li><button id="modal-btn" class="modal-button">Login</button></li>
 				<li><b style="color: white; position: relative; top: 10px;">|</b></li>
-				<li><a href="#news">Public Service</a></li>
-				<li><a href="#contact">Gallery</a></li>
-				<li><a href="#about">Home</a></li>
+				<li><a href="#public">Public Service</a></li>
+				<li><a href="katalog.html">Gallery</a></li>
+				<li><a href="index.html">Home</a></li>
 			</ul>
-
 		</nav>
 	</div>
 	<br><br><br>
@@ -32,7 +31,7 @@
 				menjadi objek wisata andalan Pulau Bali sejak awal <br>
 				tahun 1970-an.
 			</p>
-			<a class="linkLiburan" href="">Lihat</a>
+			<a class="linkLiburan" href="detailKatalog.html">Lihat</a>
 		</div>
 		<div class="Column card">
 			<img style="height: 200px; width: 390px" src="Asset 4.png" alt="">
@@ -42,7 +41,7 @@
 				<br>berdekatan dan berlokasi di barat
 				<br>bagian Kepala Burung (Vogelkoop) <br> Pulau Papua.
 			</p>
-			<a class="linkLiburan" href="">Lihat</a>
+			<a class="linkLiburan" href="detailKatalog.html">Lihat</a>
 		</div>
 		<div class="Column card">
 			<img style="height: 230px; width: 390px" src="Asset 5.png" alt="">
@@ -53,7 +52,7 @@
 				<br>menarik karena statusnya sebagai 
 				<br>gunung berapi yang masih aktif.
 			</p>
-			<a class="linkLiburan" href="">Lihat</a>
+			<a class="linkLiburan" href="detailKatalog.html">Lihat</a>
 		</div>
 
 	</div>
@@ -74,7 +73,7 @@
 			<br>lontong, taoge, tahu goreng, lentho, 
 			<br>bawang goreng, kecap, dan sambal.
 			</p>
-			<a class="linkLiburan" href="">Lihat</a>
+			<a class="linkLiburan" href="detailKatalog.html">Lihat</a>
 		</div>
 		<div class="Column card">
 			<img style="height: 200px; width: 390px" src="Asset 7.png" alt="">
@@ -83,7 +82,7 @@
 			<br>Tengah yang terbuat dari nangka muda 
 			<br>yang dimasak dengan santan.
 			</p>
-			<a class="linkLiburan" href="">Lihat</a>
+			<a class="linkLiburan" href="detailKatalog.html">Lihat</a>
 		</div>
 		<div class="Column card">
 			<img style="height: 230px; width: 390px" src="Asset 8.png" alt="">
@@ -93,27 +92,57 @@
 			<br>sebagai campuran bumbu khas yang 
 			<br>menggunakan kluwek.
 			</p>
-			<a class="linkLiburan" href="">Lihat</a>
+			<a class="linkLiburan" href="detailKatalog.html">Lihat</a>
 		</div>
 	</div>
 	<div class="borders">
 			<a class="be" href="">Jelajahi Lebih ➜</a>
 		</div>
 		<br><br><br>
-	<footer>
-		<div class="kotaken be">
-			<br><br>
-			<img class="kecilkan" src="logo.png" alt="">
-			<br><br>
-			<a class="be" href="">Cookie Policy</a> | <a class="be" href="">Privacy Policy</a> |
-			<a class="be" href="">Terms & Conditions</a> | <a class="be" href="">Contact Us</a>
-		<hr>
-		<div style="position: relative; left: -35%;">
-		Copyright 2019 - Pariwisata Indonesia
-		</div>
-		<br><br>
-	</div>
-	</footer>
+		<footer>
+				<div class="footer" id="public">
+					<img src="logo.png" alt=""><br>
+					<a href="">Cookie Policy</a> | <a href="">Privacy Policy</a> | 
+					<a href="">Terms & Conditions</a> | <a href="">Contact Us</a>
+				</div><hr>
+				<div class="footer-bottom">
+					Copyright 2019 - Pariwisata Indonesia
+					<div class="logo-footer">
+						<img src="ig-logo.png" alt="">
+						<img src="twitter-logo.png" alt="">
+						<img src="yt-logo.png" alt="">
+					</div>
+				</div>
+			</footer>
+
+			<!-- div Modal -->
+			<div id="my-modal" class="modal">
+					<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h2>Sign In</h2>
+					</div>
+					<div class="modal-body">
+						<div class="modal-form">
+							<div class="input-group">
+								<label for="username">Username</label>
+								<input type="text" placeholder="Masukkan Username" name="username" id="username" required>
+							</div>
+							<div class="input-group">
+								<label for="password">Password</label>
+								<input type="password" placeholder="******" name="password" id="password" required>
+							</div>
+							<div class="input-group" style="text-align: end;">
+								<button>Submit</button>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<p>Tidak Punya Akun ? <a href="register.html">Register</a></p>
+					</div>
+					</div>
+				</div>
+				<script src="javascript.js"></script>
 </body>
 
 </html>
