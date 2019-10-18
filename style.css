@@ -3,6 +3,9 @@
   --modal-color: #428bca;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body.katalog{
   font-family: Roboto;
   background-color: white;
