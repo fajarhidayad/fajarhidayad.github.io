@@ -5,73 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-body{
-    margin: 0;
-    padding: 0;
-   
-}
-.size1{
-    /* background-size: 100px; */
-    width: 14cm;
-    height: auto;
-}
-.size2{
-    /* background-size: 100px; */
-    width: 20cm;
-    height: auto;
-}
-.size3{
-    width: 180px;
-}
-.size4{
-    width: 50px;
-}
-.size5{
-    height: 100px;
-}
-.size6{
-    width: 90px;
-}
-.box1{
-    margin: left;
-}
-/* table, td{
+    body {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .size1 {
+        /* background-size: 100px; */
+        width: 17cm;
+        height: auto;
+    }
+
+    .size2 {
+        /* background-size: 100px; */
+        width: 20cm;
+        height: auto;
+    }
+
+    .size3 {
+        width: 180px;
+    }
+
+    .size4 {
+        width: 50px;
+    }
+
+    .size5 {
+        height: 100px;
+    }
+
+    .size6 {
+        width: 90px;
+    }
+
+    .box1 {
+        margin: left;
+    }
+
+    /* table, td{
     border: 1px solid black;
 } */
-.besar{
-    font-size: 20pt;
-    /* text-align: center; */
-}
+    .besar {
+        font-size: 20pt;
+        /* text-align: center; */
+    }
 </style>
 
-<body>
+<body class="fajar">
+    <nav>
+        <ul>
+            <img src="logo.png" alt="">
+            <li><button id="modal-btn" class="modal-button">Login</button></li>
+            <li><a href="#public">Public Services</a></li>
+            <li><a href="katalog.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
     <table>
         <tr>
-            <td rowspan="2">
+            <td rowspan="4">
                 <img class="size1" src="hotel.png" alt="wes wes">
             </td>
-            <td>
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bali&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">nordvpn coupon</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div> 
-                <!-- <img class="size2" src="map.png" alt="wes wes 2"> -->
-                
+            <td colspan="2">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=bali&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">nordvpn coupon</a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 600px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style>
+                </div>
             </td>
         </tr>
         <tr>
             <td>
                 <b class="besar">Villas Bali Ferienhaus: Villa Pagoda</b>
-                <br>
-                <p class="besar">4,5 <img class="size3" src="bintang.png" alt="bintang"> (138) <img class="size4" src="like.png" alt="like"></p>
-                <br>
-                <img class="size5" src="fasilitas.png" alt="fasilitas"> <img class="size6" src="pesan.png" alt="pesan">
-
+            </td>
+            <td rowspan="2">
+                <img class="size4" src="like.png" alt="like">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="besar">4,5 <img class="size3" src="bintang.png" alt="bintang"> (138)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="size5" src="fasilitas.png" alt="fasilitas">
+            </td>
+            <td>
+                <a href="order.html"><img class="size6" src="pesan.png" alt="pesan"></a>
             </td>
         </tr>
     </table>
- <div>
-     
- </div>
+
+    <!-- div Modal -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Sign In</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="Masukkan Username" name="username" id="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="******" name="password" id="password" required>
+                    </div>
+                    <div class="input-group" style="text-align: end;">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>Tidak Punya Akun ? <a href="register.html">Register</a></p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="footer" id="public">
+            <img src="logo.png" alt=""><br>
+            <a href="">Cookie Policy</a> | <a href="">Privacy Policy</a> |
+            <a href="">Terms & Conditions</a> | <a href="">Contact Us</a>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            Copyright 2019 - Pariwisata Indonesia
+            <div class="logo-footer">
+                <img src="ig-logo.png" alt="">
+                <img src="twitter-logo.png" alt="">
+                <img src="yt-logo.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
