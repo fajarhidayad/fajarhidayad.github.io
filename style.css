@@ -33,6 +33,7 @@ h1.w{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 div button{
@@ -383,7 +384,7 @@ body {
     top: 0;
     left: -25%;
     z-index: -1;
-    width: 150%;
+    width: 125%;
     height: 75%;
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
@@ -392,6 +393,11 @@ body {
     position: absolute;
     content: '';
     pointer-events: none;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
   }
 
   footer:before{
