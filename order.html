@@ -32,7 +32,8 @@
             <input type="date" placeholder="Isikan Email Anda" name="email" required>
             <br>
             <label for="psw"><b>Masukkan Bukti Pembayaran</b></label>
-            <input type="file" placeholder="Enter Password" name="psw" required>
+            <input type="file" name="psw" required id="inputFile">
+            <img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" / style="width: 250px;">
             <br>
             <label for="psw-repeat"><b>Komentar</b></label>
             <textarea name="alfa" id="" cols="30" rows="10"></textarea>
@@ -88,4 +89,22 @@
         <script src="javascript.js"></script>
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#image_upload_preview').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#inputFile").change(function () {
+    readURL(this);
+});
+</script>
 </html>
