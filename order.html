@@ -32,7 +32,8 @@
             <input type="date" placeholder="Isikan Email Anda" name="email" required>
             <br>
             <label for="psw"><b>Masukkan Bukti Pembayaran</b></label>
-            <input type="file" placeholder="Enter Password" name="psw" required>
+            <input id="inputFile" type="file" required>
+            <img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" />
             <br>
             <label for="psw-repeat"><b>Komentar</b></label>
             <textarea name="alfa" id="" cols="30" rows="10"></textarea>
@@ -85,6 +86,7 @@
 					</div>
 				</div>
 			</footer>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="javascript.js"></script>
 </body>
 
