@@ -3,12 +3,12 @@
     const closeBtn = document.querySelector('.close');
 
     // Events
-    modalBtn.addEventListener('click', openModal);
-    closeBtn.addEventListener('click', closeModal);
-    window.addEventListener('click', outsideClick);
+    modalBtn.addEventListener('click', bukaModal);
+    closeBtn.addEventListener('click', tutupModal);
+    window.addEventListener('click', luarModal);
 
     // Open
-    function openModal() {
+    function bukaModal() {
     modal.style.display = 'block';
     }
 
@@ -29,12 +29,12 @@
     });
 
     // Close
-    function closeModal() {
+    function tutupModal() {
     modal.style.display = 'none';
     }
 
     // Close If Outside Click
-    function outsideClick(e) {
+    function luarModal(e) {
     if (e.target == modal) {
         modal.style.display = 'none';
     }
