@@ -21,6 +21,32 @@ body.fajar{
     background-size: 100% 1186px;
 }
 
+.sidenav {
+  margin-top: 80px;
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0093a8;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  transition: 0.5s ease;
+  color: #adb9c0;
+}
+
 h1{
     color: white;
     font-size: 80px;
@@ -35,6 +61,43 @@ h1.w{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+}
+
+.box{
+  margin: 20px;
+  margin-left: 240px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.box-title{
+  background-color: #d0d8da;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.box-main{
+  background-color: #d0d8da;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  height: 480px;
+}
+
+.box-content{
+  width: 200px;
+  height: 200px;
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 20px;
 }
 
 div button{
@@ -216,7 +279,6 @@ body {
     width: 100%;
     height: 100%;
     position: static;
-
     background-color:#00b9d4;
   }
   .borders{
