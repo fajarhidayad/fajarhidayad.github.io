@@ -7,6 +7,7 @@
     <title>Visit Indonesia</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body class="fajar">
     <nav>
@@ -77,8 +78,10 @@
             <p>Nikmati belanja murah meriah di wilayah Indonesia</p>
         </div>
     </div>
+    <div style="margin-left: 80%;"><button>Jelajahi Lebih</button></div>
+    <br>
     <hr>
-    <div class="divKetiga Row center">
+    <div class="divKetiga Row center" id="list_data">
         <div class="Column card">
             <img style="height: 180px; width: 390px" src="Asset 3.png" alt="">
             <h3>Pantai Kuta, Bali</h3>
@@ -110,6 +113,8 @@
             <a class="linkLiburan" href="detailKatalog.html">Lihat</a>
         </div>
     </div>
+    <div><button style="margin-left: 80%;" id="more_btn">Jelajahi Lebih</button></div>
+    <br>
     <br>
 
     <footer>
@@ -129,5 +134,41 @@
     </footer>
 
     <script src="javascript.js"></script>
+    <script>
+         $("#more_btn").click(function () {
+            $("#more_btn").hide();
+            var url = "wisata.json"
+            $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: 'json'
+            })
+            .done(function (wisata) {
+                console.log("sukses");
+                var data = "";
+                $.each(wisata, function (index, val) {
+                    data += `
+                    <div class="Column card">
+                            <img src="`+val.img+`" alt="">
+                            <h3>
+                                `+val.h3+`
+                            </h3>
+                            <p>
+                                `+val.p+` <a href="katalog.html">Read More</a>
+                            </p>
+                            <a class="linkLiburan" href="detailKatalog.html">Lihat</a>
+                        </div>
+                    `;  
+                });
+
+                $("#list_data").append(data);
+            })
+            .fail(function () {
+                console.log("error");
+            })
+
+        });
+    
+    </script>
 </body>
 </html>
