@@ -27,21 +27,21 @@
             <hr>
 
             <label for="nama"><b>Nama</b></label>
-            <input type="text" placeholder="Isikan Nama Anda" name="nama" required>
+            <input type="text" placeholder="Isikan Nama Anda"  name="nama" id="nama" required>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Isikan Email Anda" name="email" required>
+            <input type="text" placeholder="Isikan Email Anda" name="email" id="email" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
 
             <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pass2" required>
             <hr>
             <p>Dengan melakukan pendaftaran, saya setuju dengan <a style="color: white;" href=""> Kebijakan Privasi </a>dan <a style="color: white;" href=""> Syarat
                     & Ketentuan </a>.</p>
 
-            <button type="submit" class="registerbtn">Register</button>
+            <button type="submit" class="registerbtn" onclick="checkLetter()">Register</button>
         </div>
     </form>
     <!-- div Modal -->
