@@ -29,7 +29,6 @@
         </div>
         <div class="modal-body">
             <div class="modal-form">
-                <form action="">
                     <div class="input-group">
                         <label for="username">Username</label>
                         <input type="text" placeholder="Masukkan Username" name="username" id="username" required>
@@ -39,9 +38,8 @@
                         <input type="password" placeholder="******" name="password" id="password" required>
                     </div>
                     <div class="input-group" style="text-align: end;">
-                        <button type="submit">Submit</button>
+                        <button id="login" onclick="login()">Submit</button>
                     </div>
-                </form>
             </div>
         </div>
         <div class="modal-footer">
@@ -135,6 +133,17 @@
 
     <script src="javascript.js"></script>
     <script>
+        var username = $("#username").val();
+        var password = $("#password").val();
+        
+        function login(){
+            if($("#username").val() == "admin" && $("#password").val() =="admin"){
+                location.replace("admin-index.html");
+            }else{
+                alert("Username / Password Salah")
+            }
+        }
+
          $("#more_btn").click(function () {
             $("#more_btn").hide();
             var url ="wisata.json"

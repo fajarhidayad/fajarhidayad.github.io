@@ -12,6 +12,10 @@ body.katalog{
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 body.fajar{
     font-family: Roboto;
     margin: 0;
@@ -91,13 +95,24 @@ h1.w{
 
 .box-content{
   width: 200px;
-  height: 200px;
-  background-color: cadetblue;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #6497B1;
   border-radius: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: white;
+}
+
+
+.box-content:hover{
+  background-color: rgb(81, 129, 153);
+  transition-duration: 0.5s;
 }
 
 div button{
