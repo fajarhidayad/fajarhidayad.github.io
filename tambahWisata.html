@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Orderan Baru</title>
+    <title>Tambah Wisata</title>
 </head>
 
 <body class="fajar">
@@ -21,28 +21,28 @@
     </nav>
     <form action="">
         <div class="container">
-            <h1 style="color: Black; font-size: 50px">Order</h1>
+            <h1 style="color: Black; font-size: 50px">Tambah Wisata</h1>
             <p>Tolong isi kolom dibawah ini.</p>
             <hr>
 
-            <label for="nama"><b>Masukkan Tanggal Awal</b></label>
-            <input type="date" placeholder="Isikan Nama Anda" name="nama" required>
+            <label for="nama"><b>Masukkan Nama Tempat</b></label>
+            <input type="text" placeholder="Isikan Nama Tempat" name="namaTempat" id="namaL" required>
             <br>
-            <label for="email"><b>Masukkan Tanggal Akhir</b></label>
-            <input type="date" placeholder="Isikan Email Anda" name="email" required>
+            <label for="email"><b>Masukkan Lokasi Tempat(Maps Google)</b></label>
+            <input type="text" placeholder="Isikan Lokasi Tempat" name="lokasi" id="lokasi" required>
             <br>
-            <label for="psw"><b>Masukkan Bukti Pembayaran</b></label>
+            <label for="psw"><b>Masukkan Foto Lokasi</b></label>
 
-            <input type="file" name="psw" required id="inputFile" accept="image/*">
+            <input type="file" name="psw" onchange="return validasiEkstensi()" required id="inputFile" accept="image/*">
             <img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" / style="width: 250px;">
             <br>
-            <label for="psw-repeat"><b>Komentar</b></label>
+            <label for="psw-repeat"><b>Keterangan Tambahan</b></label>
             <textarea name="alfa" id="" cols="30" rows="10"></textarea>
             <hr>
             <p>Dengan melakukan pendaftaran, saya setuju dengan <a href=""> Kebijakan Privasi </a>dan <a href=""> Syarat
                     & Ketentuan </a>.</p>
                 <br>
-            <button type="submit" class="registerbtn">Booking</button>
+            <button type="submit" class="registerbtn">Tambah Wisata</button>
         </div>
     </form>
     <!-- div Modal -->
@@ -80,7 +80,7 @@
                     <h2>Sukses</h2>
                 </div>
                 <div class="modal-body">
-                    
+                    <p>Data Berhasil Di tambahkan</p>
                 </div>
                 
                 </div>
