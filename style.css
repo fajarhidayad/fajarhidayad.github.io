@@ -202,8 +202,10 @@ nav ul li a{
     transition: 0.3s;
     width: 30%;
     border-radius: 35px;
+    padding-top: 15px;
     padding-bottom: 15px;
     display: inline-block;
+    margin: 10px;
 }
   
 .card:hover {

@@ -76,12 +76,14 @@
             <p>Nikmati belanja murah meriah di wilayah Indonesia</p>
         </div>
     </div>
-    <div style="margin-left: 80%;"><button>Jelajahi Lebih</button></div>
+    <a href="katalog.html" style="margin-left: 80%;"><a href="">Jelajahi Lebih</a></a>
     <br>
     <hr>
     <div class="divKetiga Row center" id="list_data">
         <div class="Column card">
-            <img style="height: 190px; width: 380px" src="Asset 3.png" alt="">
+            <div>
+                <img style="height: 190px; width: 380px" src="Asset 3.png" alt="">
+            </div>
             <h3>Pantai Kuta, Bali</h3>
             <p>Daerah ini merupakan sebuah tujuan <br>
                 wisata turis mancanegara dan telah <br>
@@ -91,7 +93,9 @@
             <a class="linkLiburan" href="detailKatalog.html">Lihat</a>
         </div>
         <div class="Column card">
-            <img style="height: 190px; width: 380px" src="Asset 4.png" alt="">
+            <div>
+                <img style="height: 190px; width: 380px" src="Asset 4.png" alt="">
+            </div>
             <h3>Raja Ampat, Papua</h3>
             <p>Kepulauan Raja Ampat merupakan 
                 <br>rangkaian empat gugusan pulau yang 
@@ -101,7 +105,9 @@
             <a class="linkLiburan" href="detailKatalog.html">Lihat</a>
         </div>
         <div class="Column card">
-            <img style="height: 200px; width: 380px" src="Candi.png" alt="">
+            <div>
+                <img style="height: 190px; width: 380px" src="Candi.png" alt="">
+            </div>
             <h3>Candi Borobudur</h3>
             <p>Borobudur adalah candi atau kuil 
                 <br>terbesar di dunia sekaligus 
@@ -132,17 +138,8 @@
     </footer>
 
     <script src="javascript.js"></script>
-    <script>
-        var username = $("#username").val();
-        var password = $("#password").val();
-        
-        function login(){
-            if($("#username").val() == "admin" && $("#password").val() =="admin"){
-                location.replace("admin-index.html");
-            }else{
-                alert("Username / Password Salah")
-            }
-        }
+    <script src="login.js"></script>
+    <script>   
 
          $("#more_btn").click(function () {
             $("#more_btn").hide();
